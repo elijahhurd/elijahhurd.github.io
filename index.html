@@ -23,13 +23,14 @@
         }
         .button {
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 15px;
             padding: 15px 30px;
             background-color: black;
             color: white;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
+            cursor: pointer;
         }
         .section {
             margin-top: 50px;
@@ -42,13 +43,17 @@
             font-size: 18px;
             margin: 10px 0;
         }
+        input, textarea {
+            padding: 10px;
+            width: 250px;
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
 
 <h1>Turn Missed Calls Into Booked Appointments</h1>
 <p>We help Florida hair salons automatically follow up with clients, reduce no-shows, and increase repeat bookings using simple AI automation.</p>
-<a class="button" href="mailto:elijahbhurd@gmail.com">Book a Free Demo</a>
 
 <div class="section">
     <h2>How It Works</h2>
@@ -71,7 +76,12 @@
 <div class="section">
     <h2>Ready to Get Started?</h2>
     <p>Book a free demo and see how this works for your salon!</p>
-    <a class="button" href="mailto:elijahbhurd@gmail.com@gmail.com">Book a Free Demo</a>
+    <form https://formspree.io/f/xzdaqwrn method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="_replyto" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" rows="4"></textarea><br>
+        <button type="submit" class="button">Book a Free Demo</button>
+    </form>
 </div>
 
 </body>
